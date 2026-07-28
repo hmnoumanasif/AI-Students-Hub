@@ -1,0 +1,6 @@
+{
+  "name": "AI Student Hub",
+  "description": "An all-in-one dashboard for AI students to track progress, assignments, projects, GPA, study sessions, resources, career roadmaps, and certifications.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

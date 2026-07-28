@@ -1,0 +1,189 @@
+@import "tailwindcss";
+
+html:not(.dark) {
+  color-scheme: light;
+  
+  /* Slate base remapping for clean light mode with warm natural green tone */
+  --color-slate-950: #f4f7f5; /* Canvas background - soft fresh light sage/ivory */
+  --color-slate-900: #ffffff; /* Card background */
+  --color-slate-800: #eaf0ec; /* Sub-card / hover background */
+  --color-slate-700: #d4ded7; /* Border */
+  --color-slate-600: #b5c4b9; /* Light border / divider */
+  --color-slate-500: #647568; /* Muted text */
+  --color-slate-400: #445448; /* Secondary text */
+  --color-slate-300: #233327; /* Primary text */
+  --color-slate-200: #17241a; /* Dark text / headings */
+  --color-slate-100: #0a120c; /* Deep headings */
+  --color-slate-50: #000000;
+
+  /* Humanized Greenish Accents for Light Mode */
+  /* Teal -> Deep Evergreen / Forest */
+  --color-teal-50: #f0f7f3;
+  --color-teal-100: #dcede3;
+  --color-teal-200: #b8dac7;
+  --color-teal-300: #88be9f;
+  --color-teal-400: #4d9d73;
+  --color-teal-500: #2a7d55;
+  --color-teal-600: #1d6442;
+  --color-teal-700: #165034;
+  --color-teal-800: #113f29;
+  --color-teal-900: #0d301f;
+
+  /* Indigo -> Deep Oxford Forest Green / Pine */
+  --color-indigo-50: #f2f8f4;
+  --color-indigo-100: #dfeee4;
+  --color-indigo-200: #bedac8;
+  --color-indigo-300: #8ebda0;
+  --color-indigo-400: #499872;
+  --color-indigo-500: #257852;
+  --color-indigo-600: #1b5d3f;
+  --color-indigo-700: #144931;
+  --color-indigo-800: #0f3725;
+  --color-indigo-900: #0b281b;
+  --color-indigo-950: #06170f;
+
+  /* Emerald -> Fresh Leaf & Meadow Green */
+  --color-emerald-50: #f0fdf4;
+  --color-emerald-100: #dcfce7;
+  --color-emerald-200: #bbf7d0;
+  --color-emerald-300: #86efac;
+  --color-emerald-400: #32a865;
+  --color-emerald-500: #1e8a4c;
+  --color-emerald-600: #156d3a;
+  --color-emerald-700: #11552e;
+  --color-emerald-800: #0e4425;
+
+  /* Purple -> Warm Olive Moss */
+  --color-purple-50: #f7f8f2;
+  --color-purple-100: #eaece0;
+  --color-purple-200: #d3d8bf;
+  --color-purple-300: #adba92;
+  --color-purple-400: #7a8a5f;
+  --color-purple-500: #5c6b43;
+  --color-purple-600: #465331;
+  --color-purple-700: #364025;
+
+  /* Amber -> Warm Golden Ochre / Mustard Accent */
+  --color-amber-300: #d99b26;
+  --color-amber-400: #c28419;
+  --color-amber-500: #a36b0d;
+
+  /* Rose -> Terracotta Earth Accent */
+  --color-rose-300: #cc6a52;
+  --color-rose-400: #b85239;
+  --color-rose-500: #9e3d26;
+
+  /* Sky -> Sage Cypress */
+  --color-sky-400: #428277;
+  --color-sky-500: #2f6b61;
+  --color-sky-600: #20534b;
+}
+
+html:not(.dark) input,
+html:not(.dark) select,
+html:not(.dark) textarea {
+  color: #17241a;
+}
+
+html:not(.dark) ::placeholder {
+  color: #647568;
+}
+
+html:not(.dark) option {
+  background-color: #ffffff;
+  color: #17241a;
+}
+
+html.dark {
+  color-scheme: dark;
+
+  /* Slate base for elegant Dark Mode - Deep Forest Obsidian */
+  --color-slate-950: #0e1411; /* Deepest dark forest obsidian */
+  --color-slate-900: #141c18; /* Card background */
+  --color-slate-800: #1e2822; /* Sub-card / hover background */
+  --color-slate-700: #2a3830; /* Border */
+  --color-slate-600: #3a4b41; /* Divider */
+  --color-slate-500: #667a6d; /* Muted text */
+  --color-slate-400: #93a89a; /* Secondary text */
+  --color-slate-300: #c3d4ca; /* Primary text */
+  --color-slate-200: #e2ebe5; /* Light text */
+  --color-slate-100: #f2f7f4; /* Title text */
+  --color-slate-50: #ffffff;
+
+  /* Humanized Accents for Dark Mode */
+  /* Teal -> Luminous Sage Green */
+  --color-teal-50: #0c1c14;
+  --color-teal-100: #132b1f;
+  --color-teal-200: #1c3f2d;
+  --color-teal-300: #2a5d43;
+  --color-teal-400: #4fbf8a;
+  --color-teal-500: #39a874;
+  --color-teal-600: #2d8e60;
+  --color-teal-700: #23734d;
+  --color-teal-800: #1a583a;
+
+  /* Indigo -> Warm Pine & Mint */
+  --color-indigo-50: #0b1a13;
+  --color-indigo-100: #11281d;
+  --color-indigo-200: #193b2a;
+  --color-indigo-300: #28563e;
+  --color-indigo-400: #42b882;
+  --color-indigo-500: #319f6e;
+  --color-indigo-600: #26845a;
+  --color-indigo-700: #1d6a47;
+  --color-indigo-900: #103422;
+  --color-indigo-950: #0a2015;
+
+  /* Emerald -> Vibrant Natural Leaf Green */
+  --color-emerald-400: #4ade80;
+  --color-emerald-500: #22c55e;
+  --color-emerald-600: #16a34a;
+
+  /* Purple -> Soft Olive Gold */
+  --color-purple-400: #acc089;
+  --color-purple-500: #93a770;
+  --color-purple-600: #788a57;
+  --color-purple-700: #5e6d40;
+
+  /* Amber -> Warm Harvest Gold */
+  --color-amber-300: #facc15;
+  --color-amber-400: #fbbf24;
+  --color-amber-500: #f59e0b;
+
+  /* Rose -> Soft Coral Earth */
+  --color-rose-300: #f87171;
+  --color-rose-400: #ef4444;
+  --color-rose-500: #dc2626;
+
+  /* Sky -> Soft Sage Cypress */
+  --color-sky-400: #5eead4;
+  --color-sky-500: #2dd4bf;
+  --color-sky-600: #14b8a6;
+}
+
+@layer utilities {
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .scrollbar-none::-webkit-scrollbar {
+    display: none;
+  }
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .scrollbar-none {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+}
+
+@media print {
+  body {
+    background-color: white !important;
+    color: black !important;
+  }
+  aside, header, nav, .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+}
+
+
